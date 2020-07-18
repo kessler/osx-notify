@@ -1,6 +1,6 @@
 # generic notify script for osx
 
-A _bash_ script to create an osx notification when a process is finished, using it's output (stdout) as the notification's content.
+A osx only _bash/applescript_ that creates a notification when a process is finished, using it's output (stdout) as the notification's content.
 
 ## Usage
 
