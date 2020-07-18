@@ -1,0 +1,10 @@
+#!/bin/bash
+# usage:  cmd | notify
+
+/usr/bin/osascript 3<&0 <<'APPLESCRIPT'
+  on run argv
+    set stdin to do shell script "cat 0<&3"
+        display notification stdin with title "finished" sound name "Default"
+    return stdin
+  end run
+APPLESCRIPT
